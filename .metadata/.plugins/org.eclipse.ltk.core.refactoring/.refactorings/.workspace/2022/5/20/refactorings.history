@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename Java project &apos;72_boxing_unboxing_wrapper_classes&apos; to &apos;73_boxing_unboxing_wrapper_classes&apos;&#x0D;&#x0A;- Original element: &apos;72_boxing_unboxing_wrapper_classes&apos;&#x0D;&#x0A;- Renamed element: &apos;72_boxing_unboxing_wrapper_classes&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;72_boxing_unboxing_wrapper_classes&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=72_boxing_unboxing_wrapper_classes" name="73_boxing_unboxing_wrapper_classes" references="true" stamp="1652189051219" version="1.0"/>
-</session>
