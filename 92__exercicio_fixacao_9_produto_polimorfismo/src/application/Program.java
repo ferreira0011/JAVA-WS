@@ -24,11 +24,11 @@ public class Program {
 		 * exemplo (próxima página). Para produtos importados, a taxa e alfândega deve
 		 * ser acrescentada ao preço final do produto.
 		 */
+
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-		
+
 		List<Product> list = new ArrayList<>();
 
 		System.out.print("Enter the number of products: ");
@@ -36,6 +36,7 @@ public class Program {
 
 		for (int i = 0; i < n; i++) {
 			System.out.println("Product #" + (i + 1) + " data:");
+
 			System.out.print("Common, used or imported (c/u/i)? ");
 			char ch = sc.next().charAt(0);
 
@@ -49,25 +50,21 @@ public class Program {
 				System.out.print("Manufacture date (DD/MM/YYYY): ");
 				Date date = sdf.parse(sc.next());
 				list.add(new UsedProduct(name, price, date));
-			}
-			else if (ch == 'i') {
+			} else if (ch == 'i') {
 				System.out.print("Customs fee: ");
 				Double customsFee = sc.nextDouble();
 				list.add(new ImportedProduct(name, price, customsFee));
-			}
-			else {
+			} else if (ch == 'c') {
 				list.add(new Product(name, price));
 			}
-
 		}
-		
+
 		System.out.println("\nPRICE TAGS:");
-		
-		for(Product prod : list) {
+
+		for (Product prod : list) {
 			System.out.println(prod.priceTag());
 		}
 
 		sc.close();
 	}
-
 }
