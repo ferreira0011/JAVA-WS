@@ -5,9 +5,9 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.Shape;
-import entities.Rectangle;
 import entities.Circle;
+import entities.Rectangle;
+import entities.Shape;
 import entities.enums.Color;
 
 public class Program {
@@ -43,10 +43,10 @@ public class Program {
 			}
 
 		}
-		
+
 		System.out.println("\nSHAPE AREAS:");
-		
-		for(Shape shape : list) {
+
+		for (Shape shape : list) {
 			System.out.println(String.format("%.2f", shape.area()));
 		}
 
