@@ -64,9 +64,20 @@ public class Program {
 				int numberOfEmployees = sc.nextInt();
 				list.add(new Company(name, annualIncome, numberOfEmployees));
 			}
-
 		}
-
+		
+		System.out.println("\nTAXES PAID:");
+		
+		double sum = 0.0;
+		
+		for(TaxPayer tp : list) {
+			double tax = tp.tax();
+			System.out.println(tp.getName() + ": $ " + String.format("%.2f", tax));
+			sum += tax;
+		}
+		
+		System.out.println("\nTOTAL TAXES: $ " + String.format("%.2f", sum));
+		
 		sc.close();
 	}
 
