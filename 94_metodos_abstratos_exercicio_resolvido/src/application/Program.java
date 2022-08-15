@@ -23,9 +23,15 @@ public class Program {
 
 		for (int i = 0; i < n; i++) {
 			System.out.println("Shape #" + (i + 1) + " data:");
-			System.out.print("Rectangle or Circle (r/c)? ");
-			char ch = sc.next().charAt(0);
-			System.out.print("Rectangle or Circle (r/c)? ");
+
+			char ch = 'a';
+
+			do {
+				System.out.print("Rectangle or Circle (r/c)? ");
+				ch = sc.next().charAt(0);
+			} while (ch != 'r' && ch != 'c');
+
+			System.out.print("Color (BLACK/BLUE/RED): ");
 			Color color = Color.valueOf(sc.next());
 
 			if (ch == 'r') {
@@ -35,7 +41,7 @@ public class Program {
 				double height = sc.nextDouble();
 
 				list.add(new Rectangle(color, width, height));
-			} else {
+			} else if (ch == 'c') {
 				System.out.print("Radius: ");
 				double radius = sc.nextDouble();
 
