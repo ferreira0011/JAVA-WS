@@ -23,6 +23,10 @@ public class Individual extends TaxPayer {
 
 	@Override
 	public Double tax() {
+		
+		//expressão condicional ternaria
+		//double basicTax = (getAnnualIncome() < 20000.0) ? getAnnualIncome() * 0.15 - healthExpenditures * 0.50 : getAnnualIncome() * 0.25 - healthExpenditures * 0.50;
+		
 		if (getAnnualIncome() < 20000.0) {
 			return getAnnualIncome() * 0.15 - healthExpenditures * 0.50;
 		} else {
