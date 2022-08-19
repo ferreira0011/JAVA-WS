@@ -53,7 +53,7 @@ public class Reservation {
 		}
 		this.checkIn = checkIn;
 		this.checkOut = checkOut;
-		return null;
+		return null; // Indicar que não teve erro e retornar String
 	}
 
 	@Override
