@@ -10,7 +10,7 @@ public class Pawn extends ChessPiece {
 	public Pawn(Board board, Color color) {
 		super(board, color);
 	}
-//teste
+
 	@Override
 	public boolean[][] possibleMoves() {
 		boolean[][] mat = new boolean[getBoard().getRows()][getBoard().getColumns()];
@@ -36,8 +36,7 @@ public class Pawn extends ChessPiece {
 			if (getBoard().positionExists(p) && isThereOpponentPiece(p)) {
 				mat[p.getRow()][p.getColumn()] = true;
 			}
-		}
-		else {
+		} else {
 			p.setValues(position.getRow() + 1, position.getColumn());
 			if (getBoard().positionExists(p) && !getBoard().thereIsAPiece(p)) {
 				mat[p.getRow()][p.getColumn()] = true;
@@ -60,7 +59,7 @@ public class Pawn extends ChessPiece {
 
 		return mat;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "p";
