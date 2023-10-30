@@ -1,0 +1,32 @@
+ls
+git init
+git add .
+git status
+git commit -m ""
+git status
+git branch -M main
+git remote add origin git@github.com:ferreira0011/JAVA-WS.git
+git push -u origin main
+git push
+
+
+ 
+:: git clone
+
+git@github.com:ferreira0011/teste-reposit.git
+
+git clone git@github.com:ferreira0011/teste-reposit.git
+
+
+git remote set-url origin git@github.com:ferreira0011/JAVA-WS.git
+
+
+______________________________________________
+iniciando a configuração no git
+
+git config --global user.name "Victor Alves"
+git config --global user.email "victorferreira0011@gmail.com"
+git config --list
+
+#Gerando SSH
+ssh-keygen -t ed25519 -C "victorferreira0011@gmail.com"
