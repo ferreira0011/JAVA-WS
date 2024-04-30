@@ -15,7 +15,9 @@ public class Program {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-
+		
+		// //home//thoruser//Documents//ARQUIVOS THOR//PROGRAMAÇÃO//JAVA-WS//127_Set_Exercício_resolvido_15//src//in.txt
+		
 		System.out.print("Enter File Full Path: ");
 		String path = sc.nextLine();
 
