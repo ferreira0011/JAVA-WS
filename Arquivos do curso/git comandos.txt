@@ -14,7 +14,7 @@ git push
  
 :: git clone
 
-git@github.com:ferreira0011/teste-reposit.git  
+git@github.com:ferreira0011/teste-reposit.git
 
 git clone git@github.com:ferreira0011/teste-reposit.git
 
